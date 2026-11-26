@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>E-book Recheios 2.0 | 90 recheios para bolos e doces</title>
+<meta name="description" content="90 receitas de recheios para bolos, tortas, bombons e sobremesas. E-book digital com acesso imediato e garantia de 7 dias.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800&family=Nunito+Sans:wght@400;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --cream:#fff8f1; --paper:#ffffff; --choco:#4a2a1f; --choco-2:#6b3f2f;
+  --pink:#e9577a; --pink-dark:#c83d61; --rose:#fde4ea; --gold:#f4b740;
+  --text:#3a2a24; --muted:#7a6159; --line:#f1ddd2; --green:#1f9d55;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--cream);color:var(--text);font-family:"Nunito Sans",system-ui,sans-serif;font-size:18px;line-height:1.55}
+h1,h2,h3{font-family:Fraunces,Georgia,serif;color:var(--choco);line-height:1.15;margin:0 0 .5em}
+h1{font-size:1.85rem;font-weight:800}
+h2{font-size:1.65rem;font-weight:800;text-align:center}
+p{margin:0 0 1em}
+.wrap{max-width:640px;margin:0 auto;padding:0 18px}
+section{padding:44px 0}
+.top{background:var(--choco);color:#fff;text-align:center;font-size:.9rem;font-weight:700;padding:9px 12px;letter-spacing:.02em}
+.hero{background:linear-gradient(180deg,var(--rose),var(--cream));padding-top:30px;text-align:center}
+.tag{display:inline-block;background:#fff;color:var(--pink-dark);border:1.5px solid var(--pink);border-radius:999px;padding:4px 14px;font-size:.85rem;font-weight:800;margin-bottom:14px}
+.sub{font-size:1.1rem;color:var(--muted)}
+.cover{width:150px;height:200px;margin:14px auto 20px;border-radius:6px 14px 14px 6px;background:linear-gradient(160deg,#5b3426 0%,#3b1f16 100%);box-shadow:-8px 0 0 #2e1810 inset,0 22px 40px rgba(74,42,31,.35);color:#fff;display:flex;flex-direction:column;justify-content:center;align-items:center;padding:18px;position:relative;transform:rotate(-3deg)}
+.cover .n{font-family:Fraunces,serif;font-size:3rem;font-weight:800;color:var(--gold);line-height:1}
+.cover .t{font-family:Fraunces,serif;font-size:1.25rem;font-weight:800;line-height:1.05}
+.cover .s{font-size:.62rem;opacity:.85;margin-top:8px;letter-spacing:.08em;text-transform:uppercase}
+.cover .drip{position:absolute;top:0;left:0;right:0;height:34px;background:radial-gradient(circle at 12px 0,var(--pink) 16px,transparent 17px) 0 0/40px 34px repeat-x;border-radius:6px 14px 0 0;opacity:.95}
+.btn{display:block;width:100%;background:var(--green);color:#fff;text-decoration:none;text-align:center;font-weight:800;font-size:1.15rem;padding:18px 16px;border-radius:14px;box-shadow:0 6px 0 #157a40;transition:transform .08s}
+.btn:active{transform:translateY(3px);box-shadow:0 3px 0 #157a40}
+.btn small{display:block;font-weight:700;font-size:.82rem;opacity:.9;margin-top:2px}
+.safe{font-size:.85rem;color:var(--muted);margin-top:12px;text-align:center}
+.stars{color:var(--gold);font-size:1.1rem;letter-spacing:2px}
+.rating{font-size:.95rem;color:var(--muted);margin:2px 0 16px}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:22px}
+.list{list-style:none;padding:0;margin:0}
+.list li{padding:12px 0 12px 38px;position:relative;border-bottom:1px dashed var(--line)}
+.list li:last-child{border-bottom:0}
+.list li::before{content:"✓";position:absolute;left:0;top:11px;width:26px;height:26px;border-radius:50%;background:var(--rose);color:var(--pink-dark);font-weight:800;display:flex;align-items:center;justify-content:center;font-size:.95rem}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.chip{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:16px 12px;text-align:center;font-weight:700;color:var(--choco-2)}
+.chip span{display:block;font-size:2rem;margin-bottom:4px}
+.for{background:var(--paper)}
+.quote{background:var(--paper);border-left:4px solid var(--pink);border-radius:12px;padding:16px 18px;margin-bottom:14px}
+.quote p{margin:0 0 6px;font-style:italic}
+.quote b{font-size:.9rem;color:var(--muted)}
+.offer{background:var(--choco);color:#fff;text-align:center}
+.offer h2{color:#fff}
+.price-old{opacity:.7;text-decoration:line-through}
+.price{font-family:Fraunces,serif;font-size:3.2rem;font-weight:800;color:var(--gold);line-height:1;margin:6px 0}
+.offer .note{opacity:.85;font-size:.95rem}
+.offer .safe{color:#f3e3dc}
+.guarantee{display:flex;gap:16px;align-items:center}
+.seal{flex:0 0 86px;height:86px;border-radius:50%;background:var(--gold);color:var(--choco);display:flex;flex-direction:column;align-items:center;justify-content:center;font-weight:800;line-height:1;box-shadow:0 0 0 5px #fff,0 0 0 7px var(--gold)}
+.seal b{font-family:Fraunces,serif;font-size:2rem}
+.seal small{font-size:.7rem;text-transform:uppercase}
+details{background:var(--paper);border:1px solid var(--line);border-radius:12px;margin-bottom:10px;padding:0 18px}
+summary{cursor:pointer;font-weight:800;padding:16px 0;color:var(--choco);list-style:none}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";float:right;color:var(--pink)}
+details[open] summary::after{content:"–"}
+details p{color:var(--muted)}
+footer{text-align:center;font-size:.8rem;color:var(--muted);padding:30px 18px 110px}
+.sticky{position:fixed;left:0;right:0;bottom:0;padding:10px 14px calc(10px + env(safe-area-inset-bottom));background:rgba(255,248,241,.96);border-top:1px solid var(--line);transform:translateY(110%);transition:transform .25s;z-index:10}
+.sticky.show{transform:none}
+.sticky .btn{max-width:600px;margin:0 auto;padding:14px;font-size:1.05rem}
+@media (min-width:700px){h1{font-size:2.6rem}}
+</style>
+</head>
+<body>
+
+<div class="top">🎄 Prepare seu cardápio de fim de ano</div>
+
+<header class="hero">
+  <div class="wrap">
+    <span class="tag">E-book digital · acesso imediato</span>
+    <h1>90 recheios irresistíveis para bolos, tortas e doces</h1>
+    <p class="sub">Do básico ao gourmet: receitas práticas para encher suas encomendas de sabor e deixar suas clientes pedindo mais.</p>
+
+    <div class="cover" aria-hidden="true">
+      <div class="drip"></div>
+      <div class="n">90</div>
+      <div class="t">Recheios<br>2.0</div>
+      <div class="s">Bolos · Tortas · Bombons</div>
+    </div>
+
+    <div class="stars" aria-label="4,7 de 5 estrelas">★★★★★</div>
+    <div class="rating"><b>4,7 de 5</b> em 441 avaliações de quem já comprou</div>
+
+    <a class="btn cta" href="https://go.hotmart.com/D108628312K?ap=a534">QUERO OS 90 RECHEIOS<small>por apenas R$ 49,90</small></a>
+    <p class="safe">🔒 Compra segura · Pix ou cartão · Garantia de 7 dias</p>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <h2>Cansada de fazer sempre o mesmo recheio?</h2>
+    <p>Quem faz bolo para vender sabe: a cliente quer novidade, mas falta tempo para testar receita e errar ingrediente. O recheio é o que faz a pessoa voltar e indicar você.</p>
+    <p>O <b>E-book Recheios 2.0</b>, da confeiteira <b>Marrara Bortoloti</b>, reúne 90 recheios testados para você variar o cardápio com segurança.</p>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <h2>Recheios para tudo</h2>
+    <div class="grid">
+      <div class="chip"><span>🎂</span>Bolos de aniversário</div>
+      <div class="chip"><span>🥧</span>Tortas</div>
+      <div class="chip"><span>🍫</span>Bombons</div>
+      <div class="chip"><span>🍮</span>Sobremesas</div>
+      <div class="chip"><span>🫙</span>Bolos de pote</div>
+      <div class="chip"><span>🎉</span>Encomendas de festa</div>
+    </div>
+  </div>
+</section>
+
+<section class="for">
+  <div class="wrap">
+    <h2>O que você recebe</h2>
+    <div class="card">
+      <ul class="list">
+        <li><b>90 receitas de recheios</b> para bolos, tortas, bombons e sobremesas</li>
+        <li>Opções clássicas e gourmet para montar um <b>cardápio variado</b></li>
+        <li>Receitas práticas, com passo a passo fácil de seguir</li>
+        <li>Ideal para quem vende ou quer começar a vender doces</li>
+        <li><b>Acesso imediato</b> no celular, tablet ou computador</li>
+      </ul>
+    </div>
+    <div style="margin-top:22px">
+      <a class="btn cta" href="https://go.hotmart.com/D108628312K?ap=a534">QUERO MEU E-BOOK AGORA<small>acesso imediato após a compra</small></a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>É pra você se...</h2>
+    <ul class="list">
+      <li>Você faz bolos e doces por encomenda e quer variar o cardápio</li>
+      <li>Quer aproveitar as vendas de Natal e fim de ano</li>
+      <li>Está começando na confeitaria e quer receitas que dão certo</li>
+      <li>Ama cozinhar e quer impressionar a família nas festas</li>
+    </ul>
+  </div>
+</section>
+
+<section class="for">
+  <div class="wrap">
+    <h2>Quem já comprou aprovou</h2>
+    <div class="quote"><p>"Esses produtos são maravilhosos, você não erra em nenhuma receita. É muito prático e fácil."</p><b>Ana ★★★★★</b></div>
+    <div class="quote"><p>"Foi uma experiência excelente, consegui reproduzir tudo como foi ensinado."</p><b>Andrea ★★★★★</b></div>
+  </div>
+</section>
+
+<section class="offer" id="oferta">
+  <div class="wrap">
+    <h2>Leve os 90 recheios hoje</h2>
+    <p class="note">E-book Recheios 2.0 · acesso imediato</p>
+    <div class="price">R$ 49,90</div>
+    <p class="note">pagamento único, no Pix ou no cartão</p>
+    <a class="btn cta" href="https://go.hotmart.com/D108628312K?ap=a534" style="margin-top:18px">SIM, QUERO OS RECHEIOS<small>garantia de 7 dias</small></a>
+    <p class="safe">🔒 Ambiente de pagamento seguro</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="card guarantee">
+      <div class="seal"><b>7</b><small>dias de<br>garantia</small></div>
+      <div>
+        <h3>Risco zero para você</h3>
+        <p style="margin:0">Se em até 7 dias você não gostar, é só pedir o reembolso e recebe 100% do valor de volta, sem perguntas.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <h2>Dúvidas frequentes</h2>
+    <details><summary>Como recebo o e-book?</summary><p>Logo depois que o pagamento é aprovado, você recebe no seu e-mail os dados de acesso ao conteúdo.</p></details>
+    <details><summary>É um livro físico?</summary><p>Não. É um e-book digital: você acessa pelo celular, tablet ou computador, e pode consultar sempre que quiser.</p></details>
+    <details><summary>Quais formas de pagamento?</summary><p>Pix e cartão de crédito.</p></details>
+    <details><summary>E se eu não gostar?</summary><p>Você tem 7 dias de garantia. Se não gostar, pede o reembolso e recebe o valor integral de volta.</p></details>
+    <div style="margin-top:22px">
+      <a class="btn cta" href="https://go.hotmart.com/D108628312K?ap=a534">QUERO OS 90 RECHEIOS<small>por R$ 49,90</small></a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  E-book Recheios 2.0, de Marrara Bortoloti. Esta é uma página de divulgação independente; a venda e a entrega são feitas pela plataforma oficial do produto.<br>
+  Os resultados dependem da prática de cada pessoa.
+</footer>
+
+<div class="sticky" id="sticky"><a class="btn cta" href="https://go.hotmart.com/D108628312K?ap=a534">QUERO OS 90 RECHEIOS · R$ 49,90</a></div>
+
+<script>
+(function(){
+  var s=document.getElementById('sticky'), hero=document.querySelector('.hero .btn');
+  function u(){var r=hero.getBoundingClientRect();s.classList.toggle('show', r.bottom<0 || window.scrollY>40 && r.top>window.innerHeight);}
+  window.addEventListener('scroll',u,{passive:true});u();
+})();
+</script>
+</body>
+</html>
